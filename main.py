@@ -14,10 +14,10 @@ for i in timetable:
     while True:
         if not isStarted:
                 if datetime.now().hour == int(i[1].split(':')[0]) and datetime.now().minute == int(i[1].split(':')[1]):
-                    if i[0] is subject1:
+                    if i[0] == subject1:
                         subject1()
                         print("subject1 class is opened")
-                    if i[0] is subject2:
+                    if i[0] == subject2:
                         subject2()
                         print("subject2 class is opened")
                     #Add the If statement according to the number of subjects
